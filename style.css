@@ -1,0 +1,64 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+h1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+body{
+    background: linear-gradient(to left, rgb(245, 30, 26),rgb(12, 246, 227));
+}
+.calculator{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(140px, auto) repeat(5,120px);
+}
+button{
+    cursor: pointer;
+    font-size: 24px;
+    border: 1px solid black;
+    outline: 0;
+    background-color: rgba(18, 237, 18, 0.6);
+}
+button:hover{
+    background-color: rgba(18, 237, 18, 0.85);;
+}
+#big{
+    grid-column: span 2;
+}
+.output{
+    padding: 12px;
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.70);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.prevop{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.70);
+}
+.currop{
+    font-size: 36px;
+    color: rgba(255, 255, 255);
+}
+.footer{
+    padding-top: 20px;
+    color: #F9FAF8;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+}
